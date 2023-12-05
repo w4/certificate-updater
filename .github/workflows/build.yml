@@ -4,8 +4,8 @@ on:
   push:
 jobs:
   build:
-    uses: nixbuild/nixbuild-action/.github/workflows/ci-workflow.yml@v17
+    uses: nixbuild/nixbuild-action/.github/workflows/ci-workflow.yml@v19
     secrets:
-      nixbuild_ssh_key: ${{ secrets.NIXBUILD_SSH_KEY }}
+      nixbuild_token: ${{ secrets.NIXBUILD_TOKEN }}
     with:
       filter_builds: .top_attr
