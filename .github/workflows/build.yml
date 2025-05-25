@@ -4,7 +4,7 @@ on:
   push:
 jobs:
   build:
-    uses: nixbuild/nixbuild-action/.github/workflows/ci-workflow.yml@v19
+    uses: nixbuild/nixbuild-action/.github/workflows/ci-workflow.yml@v20
     secrets:
       nixbuild_token: ${{ secrets.NIXBUILD_TOKEN }}
     with:
