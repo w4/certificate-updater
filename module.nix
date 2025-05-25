@@ -53,6 +53,7 @@ in
     systemd.timers.certificate-updater = {
       enable = true;
       wantedBy = [ "timers.target" ];
+      wants = [ "network-online.target" ];
       after = [ "network-online.target" ];
       timerConfig = {
         OnBootSec = "0s";
